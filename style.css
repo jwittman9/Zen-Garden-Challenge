@@ -1,0 +1,552 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font: 75% georgia, sans-serif;
+	line-height: 1.88889;
+	color: black; 
+	margin: 0; 
+	padding: 0;
+	background: linear-gradient(0deg, rgba(226,113,113,0.46262254901960786) 53%, rgba(124,236,236,0.9051995798319328) 100%);
+	
+	}
+img{
+	max-width:100%;}
+
+p { 
+	margin-top: 0; 
+	text-align: justify;
+	}
+
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color:hsla(298,100%,70%,1.00);
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color:hsla(225,100%,48%,1.00);
+	}
+abbr {
+	border-bottom: none;
+	}
+
+
+/* specific divs */
+
+.intro { 
+	min-width: 470px;
+	width: 50%;
+	margin-top:0;
+	margin: 50px;
+	}
+
+footer { 
+	text-align: center; 
+	}
+footer a:link, footer a:visited { 
+	margin-right: 20px; 
+	}
+
+
+.sidebar .wrapper { 
+	font: 18px verdana, sans-serif; 
+	background: transparent url("Zengarden/Paper.jpg") top left repeat; 
+	padding: 10px; 
+	margin-top: 150px; 
+	width: 200px; 
+	}
+.sidebar h3.select { 
+	background: transparent url("Zengarden/Select.png") no-repeat top left; 
+	margin: 10px 0 5px 0; 
+	width: 197px; 
+	height: 32px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background-size: 100% 100%;
+	}
+.sidebar h3.archives { 
+	background: transparent url("Zengarden/Archives.png") no-repeat top left; 
+	margin: 25px 0 5px 0; 
+	width:197px; 
+	height: 32px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.sidebar h3.resources { 
+	background: transparent url("Zengarden/Resources.png") no-repeat top left; 
+	margin: 25px 0 5px 0; 
+	width:197px; 
+	height:32px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	}
+.sidebar li {
+	line-height: 1.3em; 
+	background: transparent url("Zengarden/Line.png") repeat-x top center; 
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	list-style-type: none;
+	}
+.sidebar li a:link {
+	color:hsla(297,87%,41%,1.00);
+	}
+.sidebar li a:visited {
+	color: #B3AE94;
+	}
+.sidebar li a:hover { 
+	text-decoration: underline; 
+	color:hsla(225,100%,48%,1.00);
+	}
+
+
+.extra1 {
+	background: transparent url("Zengarden/cloudsSmall.png") top left no-repeat; 
+	position: absolute; 
+	top: 0; 
+	bottom: 40px;
+	right: 0; 
+	width: 148px; 
+	height: 220px;
+	}
+.extra2 {
+	background-image: url("Zengarden/Fire.png");
+	height: 150px;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	z-index: 5;
+}
+.extra3 {
+	z-index: 2;
+	height: 200px;
+	width: 100%;
+	position: absolute;
+	background-image: url("Zengarden/City_of_Dis_Cropped.jpg");
+	background-repeat: repeat;
+	background-position: top;
+	/*background-size: 100% 100%; if I wanna strech */
+	margin:0;
+	padding:0;
+}
+
+
+/* small cell Vertical*/
+@media screen and (max-width:700px){
+	h3 { 
+	font: italic normal 1.4em georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color:hsla(258,89%,60%,1.00);
+	font-size: 15px;
+	}
+	.summary p {
+	font: italic 1.1em/2.2 Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif"; 
+	text-align: center;
+	font-size:16px;
+	}
+	.supporting p {	
+	font-size:15px;
+		padding:10px;
+	}
+	.supporting {	
+	background:url("Zengarden/AngelRepeatBestWhiteSmaller.jpg");
+	width:360px;
+	margin-top:0;
+	margin-left:40px;
+	padding:5px;
+	}
+	.sidebar {
+	margin-left: 200px;
+	top:0;
+	right: 0;
+	}
+	.summary { 
+	width: 300px; 
+	float:left;
+	margin-top:400px;
+	background:url("Zengarden/PaperYellow.jpg");
+	clear:both; 
+	margin-left:60px;
+	}
+	.preamble {
+	clear: right; 
+	padding: 0px 10px 0 10px;
+	width:350px;
+	margin-left:30px;
+	background:url("Zengarden/PaperTestpink.jpg");
+	font-size:20px;
+	margin-top:650px;
+	}
+	
+	header { 
+	padding-top: 10px;
+	height: 87px;
+	width:400px;
+}
+	header h1 { 
+	background: transparent url("Zengarden/ZenGardenTitle3.png") no-repeat top left;
+	margin-top: 0px;
+	display: block;
+	background-size:100%;
+	width: 400px;
+	height: 116px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+	
+	header h2 { 
+	background: transparent url("Zengarden/Beauty3.png") no-repeat right; 
+	margin-top: 180px; 
+	background-size: 100% 100%;
+	margin-bottom: 0px; 
+	width: 400px; 
+	height: 176px; 
+	margin-left:0px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+	.page-wrapper { 
+	background: url("Zengarden/StairsTransparent.png") no-repeat top left; 
+	padding: 0 0px 0 0px;  
+	margin: 0; 
+	position: relative;
+	width:500px;
+	background-size: 100%;
+	}
+}
+
+/*medium tablet landscape*/
+@media screen and (min-width:701px) and (max-width:1000px){
+	h3 { 
+	font: italic normal 1.4em georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color:hsla(258,89%,60%,1.00);
+	font-size: 19px;
+	}
+	.summary p {
+	font: italic 1.1em/2.2 Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif"; 
+	text-align: center;
+	font-size:17px;
+	}
+	.supporting p {	
+	font-size:17px;
+	}
+	.supporting {	
+	padding-left: 10px; 
+	margin-bottom: 0px;
+	width:400px;
+	background:url("Zengarden/AngelRepeatBestWhiteTransparent.jpg") repeat-y;
+	margin-left:140px;
+	padding:50px;
+	}
+	.sidebar {
+	margin-left: 360px; 
+	top:0;
+	right: 0;
+	}
+	.summary { 
+	width: 450px; 
+	float:left;
+	margin-top:250px;
+	background:url("Zengarden/PaperYellow.jpg");
+	clear:both; 
+	margin-left:100px;
+	}
+	.preamble {
+	clear: right; 
+	padding: 0px 10px 0 10px;
+	width:600px;
+	margin-left:0px;
+	background:url("Zengarden/PaperTestpink.jpg");
+	font-size:20px;
+	margin-top:500px;
+	}
+	.extra4 {
+	z-index: -5;
+	height: 1250px;
+	width: 100%;
+	position: absolute;
+	top: 1100px;
+	background: url("Zengarden/Spear.png");
+	background-position: center;
+	margin-left:0px;
+}
+	header { 
+	padding-top: 0px;
+	height: 87px;
+	width:400px;
+	margin-left:0;
+	margin-top:00px;
+}
+	
+	header h1 { 
+	background: transparent url("Zengarden/ZenGardenTitle3.png") no-repeat top left;
+	margin-top: 0px;
+	display: block;
+	background-size:100%;
+	width: 400px;
+	height: 116px;
+	float: left;
+	margin-left:200px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+	
+	header h2 { 
+	background: transparent url("Zengarden/Beauty3.png") no-repeat right; 
+	margin-top: 400px; 
+	background-size: 100% 100%;
+	margin-bottom: 0px; 
+	width: 600px; 
+	height: 176px; 
+	margin-left:0px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+	.page-wrapper { 
+	background: url("Zengarden/StairsTransparent.png") no-repeat top  ; 
+	padding: 0 0px 0 0px;  
+	margin: 0; 
+	position: relative;
+	}
+}
+/*large landscape*/
+@media screen and (min-width:1001px) and (max-width:1400px){
+	h3 { 
+	font: italic normal 1.4em georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color:hsla(258,89%,60%,1.00);
+	font-size: 28px;
+	}
+	.summary p {
+	font: italic 1.1em/2.2 Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif"; 
+	text-align: center;
+	font-size:25px;
+	}
+	.supporting p {	
+	font-size:20px;
+	}
+	.supporting {	
+	padding-left: 10px; 
+	margin-bottom: 40px;
+	width:450px;
+	background:url("Zengarden/AngelRepeatBestWhiteTransparent.jpg") repeat-y;
+	margin-left:300px;
+	margin-top:100px;
+	padding:100px;
+	}
+	.sidebar {
+	margin-top:400px;
+	margin-left: 600px; 
+	position:absolute; 
+	top:0;
+	right: 0;
+	}
+	.summary { 
+	width: 350px; 
+	float:left;
+	margin-top:30px;
+	background:url("Zengarden/PaperYellow.jpg");
+	clear:both; 
+	margin-left:0px;
+	}
+	.preamble {
+	clear: right; 
+	padding: 0px 10px 0 10px;
+	width:500px;
+	margin-left:380px;
+	background:url("Zengarden/PaperTestpink.jpg");
+	font-size:20px;
+	margin-top:450px;
+	}
+	.extra4 {
+	z-index: -5;
+	height: 1250px;
+	width: 100%;
+	position: absolute;
+	top: 1200px;
+	background: url("Zengarden/Spear.png");
+	background-position: center;
+	margin-left:0px;
+}
+	header { 
+	padding-top: 0px;
+	height: 87px;
+	width:100%;
+}
+	header h1 { 
+	background: transparent url("Zengarden/ZenGardenTitle3.png") no-repeat top left;
+	margin-top: 0px;
+	display: block;
+	background-size:100%;
+	width: 400px;
+	height: 116px;
+	float: left;
+	margin-left:340px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+	
+	header h2 { 
+	background: transparent url("Zengarden/Beauty3.png") no-repeat right;  
+	background-size: 100% 100%;
+	margin-bottom: 0px; 
+	width: 800px; 
+	height: 176px; 
+	float: left;
+	margin-left:180px;
+	margin-top:200px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+	.page-wrapper { 
+	background: url("Zengarden/StairsTransparent.png") no-repeat top; 
+	padding: 0 0px 0 0px;  
+	margin: 0; 
+	position: relative;
+	}
+}
+/*Extra large landscape*/
+@media screen and (min-width:1401px){
+		h3 { 
+	font: italic normal 1.4em georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color:hsla(258,89%,60%,1.00);
+	font-size: 30px;
+	}
+	.summary p {
+	font: italic 1.1em/2.2 Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif"; 
+	text-align: center;
+	font-size:28px;
+	}
+	.supporting p {	
+	font-size:22px;
+	}
+	.supporting {	
+	padding-left: 10px; 
+	margin-bottom: 40px;
+	width:600px;
+	background:url("Zengarden/AngelRepeatBestWhiteTransparent.jpg") repeat-y;
+	margin-left:480px;
+	padding:100px;
+	}
+	.sidebar {
+	margin-top:450px;
+	margin-left:000px; 
+	position:absolute; 
+	top:0;
+	right: 0;
+	}
+	.summary { 
+	width: 300px; 
+	float:left;
+	margin-top:240px;
+	background:url("Zengarden/PaperYellow.jpg");
+	clear:both; 
+	margin-left:50px;
+	}
+	.preamble {
+	clear: right; 
+	padding: 0px 10px 0 10px;
+	width:800px;
+	margin-left:480px;
+	background:url("Zengarden/PaperTestpink.jpg");
+	font-size:20px;
+	margin-top:270px;
+	}
+	.extra4 {
+	z-index: -5;
+	height: 1250px;
+	width: 100%;
+	position: absolute;
+	top: 1200px;
+	background: url("Zengarden/Spear.png");
+	background-position: center;
+	margin-left:0px;
+}
+	header { 
+	padding-top: 0px;
+	height: 87px;
+	width:100%;
+}
+	header h1 { 
+	background: transparent url("Zengarden/ZenGardenTitle3.png") no-repeat top left;
+	margin-top: 0px;
+	display: block;
+	background-size:100%;
+	width: 350px;
+	height: 116px;
+	float: left;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+	
+	header h2 { 
+	background: transparent url("Zengarden/Beauty3.png") no-repeat right; 
+	margin-top: 0px; 
+	background-size: 100%;
+	margin-bottom: 0px; 
+	width: 800px; 
+	height: 176px; 
+	float: left;
+	margin-left:530px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+	.page-wrapper { 
+	background: url("Zengarden/StairsTransparent.png") no-repeat top left; 
+	padding: 0 0px 0 0px;  
+	margin: 0; 
+	position: relative;
+	}
+}
